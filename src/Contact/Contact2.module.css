@@ -1,0 +1,176 @@
+@import "../var.css";
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contactList {
+    transform: translateY(-100px);
+}
+
+.contactList li {
+    color: #333;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.contactList li p,
+.contactList li a {
+    display: inline;
+    margin-left: 32px;
+    color: #333;
+    text-decoration: none;
+}
+
+.contactList h1 {
+    font-size: 5em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    color: white;
+    background-color: black;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.contact form input {
+    padding: 16px 32px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 16px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 8px 0;
+    color: white;
+    font-size: var(--p-font);
+}
+
+.contact form textarea {
+    height: 200px;
+}
+
+.contact form button {
+    width: 100%;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: calc(1.5*var(--p-font));
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.contact form button:hover {
+    cursor: pointer;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    padding: 16px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    margin: 8px 0;
+}
+
+@media (max-width: 1200px) {
+    .contact {
+        width: 100vw;
+        min-height: 1000px;
+        background-color: var(--yellow);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactList {
+        padding: 32px;
+    }
+
+    .contactList h1 {
+        font-size: 2.5em;
+    }
+
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 400px;
+        color: white;
+        background-color: black;
+        padding: 32px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        margin-bottom: 32px;
+    }
+
+    .contact form button {
+        width: 100%;
+        background-color: var(--yellow);
+        border: none;
+        border-radius: 10px;
+        height: 100px;
+        text-transform: uppercase;
+        font-size: calc(1.5*var(--p-font));
+        font-weight: bold;
+        margin-top: 8px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .contact {
+        width: 100vw;
+        min-height: 1000px;
+        background-color: var(--yellow);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactList {
+        padding: 32px;
+    }
+
+    .contactList h1 {
+        font-size: 2.5em;
+    }
+
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        color: white;
+        background-color: black;
+        padding: 32px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .contact form button {
+        width: 100%;
+        background-color: var(--yellow);
+        border: none;
+        border-radius: 10px;
+        height: 100px;
+        text-transform: uppercase;
+        font-size: calc(1.5*var(--p-font));
+        font-weight: bold;
+        margin-top: 8px;
+    }
+}

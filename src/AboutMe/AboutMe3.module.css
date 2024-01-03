@@ -1,0 +1,140 @@
+@import "../var.css";
+
+.aboutMe {
+    padding: 0 24px;
+}
+
+.aboutMeHeader h1 {
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px var(--yellow);
+}
+
+.aboutMeHeader {
+    padding-bottom: 100px;
+}
+
+.aboutMeHeader hr {
+    border: none;
+    height: 3px;
+    background-color: black;
+}
+
+.aboutMeContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.aboutMeCard {
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 32px;
+}
+
+.aboutMeCard h1 {
+    position: absolute;
+    top: -30px;
+}
+
+.aboutMeCard p {
+    height: 40%;
+    width: 100%;
+}
+
+.aboutMeCard .iconShadow {
+    color: var(--yellow);
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: 1;
+        padding-bottom: 100px;
+    }
+
+    .aboutMeHeader {
+        padding-bottom: 48px;
+    }
+
+    .aboutMeCard {
+        width: 80%;
+        height: 350px;
+        border-radius: 30px;
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px;
+        position: relative;
+        margin: 0 auto 48px;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    .aboutMeHeader {
+        padding-bottom: 48px;
+    }
+
+    .aboutMeCard {
+        width: 80%;
+        height: 500px;
+        border-radius: 30px;
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px;
+        position: relative;
+        margin-bottom: 48px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .aboutMe {
+        padding: 0 5%;
+    }
+
+    .aboutMeContainer {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    .aboutMeHeader {
+        padding-bottom: 48px;
+    }
+
+    .aboutMeCard {
+        width: 600px;
+        height: 300px;
+        border-radius: 30px;
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px;
+        position: relative;
+        margin: 0 16px 48px;
+    }
+}

@@ -1,0 +1,61 @@
+@import "../var.css";
+
+.why {
+    width: 100vw;
+    background-color: var(--yellow);
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.whyContainer {
+    background-color: black;
+    width: 70vw;
+    min-height: 50vh;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    margin: 64px 0 64px;
+    padding: 64px;
+    color: white;
+}
+
+.whyContainer h1 {
+    font-size: 5em;
+}
+
+.whyContainer h2 {
+    font-size: 2em;
+}
+
+.whyContainer p {
+    color: #eee;
+}
+
+@media (max-width: 576px) {
+    .why {
+        width: 100vw;
+        background-color: var(--yellow);
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .whyContainer {
+        background-color: black;
+        width: 70vw;
+        min-height: 50vh;
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        margin: 64px 0;
+        padding: 32px;
+        color: white;
+    }
+
+    .whyContainer h1 {
+        font-size: 3em;
+    }
+
+    .whyContainer h2 {
+        font-size: 2em;
+    }
+}

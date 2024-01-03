@@ -1,0 +1,125 @@
+@import "../var.css";
+
+@keyframes grow {
+
+    0%,
+    33% {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.growAnimation {
+    animation: grow 0.5s ease-in-out
+}
+
+.skillLi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.fullBar {
+    width: 154px;
+    height: 20px;
+    background-color: var(--dark-font);
+    box-sizing: border-box;
+    border-radius: 3px;
+    position: relative;
+}
+
+.bar {
+    height: 16px;
+    position: absolute;
+    background-color: var(--dark-font);
+    left: 2px;
+    top: 2px;
+    border-radius: 1px;
+}
+
+.coverBar {
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    border-radius: 1px;
+}
+
+@keyframes load {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.loadAnimation {
+    animation: load 1s ease-in-out;
+    width: 100%;
+}
+
+h1 {
+    position: relative
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    background-color: white;
+}
+
+.sliceRightAnimation {
+    animation: sliceRight 0.5s ease-in-out;
+}
+
+@keyframes sliceRight {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+.ctLi {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 0;
+    background-color: white;
+}
+
+.ctLi span {
+    padding-left: 20px;
+}
+
+.ctLi:hover {
+    cursor: pointer;
+}
+
+.container {
+    box-shadow: var(--shadow);
+    padding: var(--c-padding);
+    border-radius: 5px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeUpAnimation {
+    animation: fadeUp 0.5s ease-in-out;
+}

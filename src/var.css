@@ -1,0 +1,16 @@
+:root {
+    --light-background: #eee;
+    --dark-background: #ddd;
+    --light-font: #eee;
+    --dark-font: #111;
+    --yellow: #FDD835;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --p-font: 'Roboto', sans-serif;
+    --p-size: 18px;
+    --p-lh: calc(1.5*var(--p-size));
+    --p-sp: calc(0.016*var(--p-size));
+    --header-font: 'Koulen', sans-serif;
+    --header-size: calc(2*var(--p-size));
+    --padding-side: 0 5vw;
+    --c-padding: 16px 32px
+}
